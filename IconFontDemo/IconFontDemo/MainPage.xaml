@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:IconFontDemo"
+             x:Class="IconFontDemo.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontAwesome"
+            x:TypeArguments="x:String"
+            iOS="FontAwesome"
+            Android="Fonts/fontawesome-webfont.ttf#FontAwesome"
+            WinPhone="/Assets/Fonts/fontawesome-webfont.ttf#FontAwesome" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Orientation="Vertical">
+        <Label  Text="&#xf015;" TextColor="Red" FontFamily="{StaticResource FontAwesome}"    FontSize="10"></Label>
+        <Label Text="&#xf015;" TextColor="Green" FontFamily="{StaticResource FontAwesome}"   FontSize="20"></Label>
+        <Label Text="&#xf015;" TextColor="Blue" FontFamily="{StaticResource FontAwesome}"    FontSize="30"></Label>
+        <Label Text="&#xf015;" TextColor="Yellow" FontFamily="{StaticResource FontAwesome}"  FontSize="40"></Label>
+        <Label  Text="&#xf015;" TextColor="Red" FontFamily="{StaticResource FontAwesome}"    FontSize="50"></Label>
+        <Label Text="&#xf015;" TextColor="Green" FontFamily="{StaticResource FontAwesome}"   FontSize="60"></Label>
+        <Label Text="&#xf015;" TextColor="Blue" FontFamily="{StaticResource FontAwesome}"    FontSize="70"></Label>
+        <Label Text="&#xf015;" TextColor="Yellow" FontFamily="{StaticResource FontAwesome}"  FontSize="80"></Label>
+        <Label  Text="&#xf015;" TextColor="Red" FontFamily="{StaticResource FontAwesome}"    FontSize="90"></Label>
+        <Label Text="&#xf015;" TextColor="Green" FontFamily="{StaticResource FontAwesome}"   FontSize="100"></Label>
+    </StackLayout>
+
+</ContentPage>
